@@ -4,6 +4,7 @@ using namespace std;
 class Car
 {
 public:
+    int petrolConsumption;
     Car() { cout << "Car Constructing..." << endl; }
     virtual void start() { cout << "Car Starting...!" << endl; }
     virtual void drive() { cout << "Car Driving...!" << endl; }
@@ -12,6 +13,7 @@ public:
 class SuperCar : public Car
 {
 public:
+    int petrolConsumption;
     SuperCar() { cout << "SuperCar Constructing..." << endl; }
     void start() { cout << "SuperCar Starting...!" << endl; }
     void drive() { cout << "SuperCar Driving...!" << endl; }
@@ -21,6 +23,7 @@ public:
 class VintageCar : public Car
 {
 public:
+    int petrolConsumption;
     VintageCar() { cout << "VintageCar Constructing..." << endl; }
     ~VintageCar() { cout << "VintageCar Destroying..." << endl; }
 };
@@ -37,6 +40,7 @@ int main()
     Car *car = new Car();
     car = super;
     car->drive();
+    car->petrolConsumption = 9;
 
     car = nullptr;
     delete super;
