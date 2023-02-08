@@ -1,2 +1,5 @@
-# DSA
-Data Structures and Algorithms Practice
+# ForTheFunOfIt
+
+## Data Structures and Algorithms Practice
+
+## LeetCode Solutions
